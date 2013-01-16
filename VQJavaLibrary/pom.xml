@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>VQJavaLibrary</groupId>
+  <artifactId>VQJavaLibrary</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>VQJavaLibrary</name>
+  <description>VQ projects common classes library ( should we call it a framework? )</description>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <repositories>
+    <repository>
+      <id>mvn repo</id>
+      <url>http://repository.jboss.com/maven2/</url>
+    </repository>
+    <repository>
+		<id>java.net2</id>
+		<name>Repository hosting the jee6 artifacts</name>
+		<url>http://download.java.net/maven/2</url>
+	</repository>
+    <repository>
+		<id>mvn repo at maven.org</id>
+		<name>Repository hosting the jee6 artifacts</name>
+		<url>http://repo1.maven.org/maven2</url>
+	</repository>
+ </repositories>
+ 
+  <dependencies>
+    
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-client</artifactId>
+			<version>9.0.0.M0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-server</artifactId>
+			<version>9.0.0.M0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-bundle</artifactId>
+			<version>1.14</version>
+		</dependency>
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.1</version>
+		</dependency>
+            
+      
+  </dependencies>
+</project>
